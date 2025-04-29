@@ -1,0 +1,32 @@
+.body {
+    background-color: #38210b;
+}
+
+.form-container {
+    color: aliceblue;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    background-color: #5a330d;
+    width: 400px;
+    border: 2px solid #492a0d;
+    border-radius: 20px;
+}
+
+.form-wrap {
+    display: flex;
+    flex-direction: column;
+}
+
+.state-wrap {}
+
+.send-btn {
+    background-color: #a17858;
+    color: aliceblue;
+    border: 2px solid #492a0d;
+    cursor: pointer;
+}
+
+.error {
+    color: whitesmoke;
+}
