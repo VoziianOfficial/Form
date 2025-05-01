@@ -1,16 +1,16 @@
-.body {
-    background-color: #38210b;
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    padding: 20px;
 }
 
 .form-container {
-    color: aliceblue;
-    align-items: center;
-    display: flex;
-    flex-direction: column;
-    background-color: #5a330d;
-    width: 400px;
-    border: 2px solid #492a0d;
-    border-radius: 20px;
+    max-width: 400px;
+    margin: auto;
+    background: white;
+    padding: 20px;
+    border-radius: 12px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
 
 .form-wrap {
@@ -18,15 +18,34 @@
     flex-direction: column;
 }
 
-.state-wrap {}
+label,
+.state-wrap p {
+    margin-top: 10px;
+    margin-bottom: 4px;
+}
 
-.send-btn {
-    background-color: #a17858;
-    color: aliceblue;
-    border: 2px solid #492a0d;
+input[type="text"],
+input[type="password"] {
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+}
+
+button {
+    margin-top: 15px;
+    padding: 10px;
+    background-color: #007bff;
+    border: none;
+    color: white;
+    border-radius: 6px;
     cursor: pointer;
 }
 
+button:hover {
+    background-color: #0056b3;
+}
+
 .error {
-    color: whitesmoke;
+    color: red;
+    margin-top: 10px;
 }

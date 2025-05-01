@@ -4,46 +4,37 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Form</title>
-    <link rel="stylesheet" href="./css/styles.css" />
-    <link rel="icon" href="./favicon.ico/favicon.ico" type="image/x-icon">
-
+    <title>Contact Us</title>
+    <link rel="stylesheet" href="./css/styles.css">
 </head>
 
-<body class="body">
+<body>
     <div class="form-container">
-        <h1>Send us a Message</h1>
-        <form id="main-form" onsubmit=" return checkForm(this)" method="post" class="form-wrap">
+        <h1>Contact Us</h1>
+
+        <form id="main-form" onsubmit="return checkForm()" class="form-wrap">
             <label for="name">Name</label>
-            <input type="text" name="name" id="name">
+            <input type="text" name="name" id="name" required>
 
-            <!-- <label for="email">Email</label>
-            <input type="email" name="email" id="email"> -->
+            <label for="pass">Password</label>
+            <input type="password" name="pass" id="pass" required>
 
-            <!-- <label for="phone">Phone</label>
-            <input type="tel" name="phone" id="phone"> -->
-
-            <label for="pass">password</label>
-            <input type="password" name="pass" id="pass">
-
-            <label for="repass">check password</label>
-            <input type="password" name="repass" id="repass">
+            <label for="repass">Confirm Password</label>
+            <input type="password" name="repass" id="repass" required>
 
             <div class="state-wrap">
-                <p>Preferred contact method of communication</p>
-                <input type="radio" name="state" id="male" value="man">
-                <label for="male">Man</label>
-                <input type="radio" name="state" id="female" value="woman">
-                <label for="female">Woman</label>
+                <p>Gender:</p>
+                <label><input type="radio" name="state" value="man"> Male</label>
+                <label><input type="radio" name="state" value="woman"> Female</label>
             </div>
 
-            <input type="text" placeholder="text" name="text">
+            <label for="text">Comment</label>
+            <input type="text" name="text" placeholder="Your message">
 
             <div id="error" class="error"></div>
-            <button type="submit" class="send-btn">Send</button>
+            <button type="submit">Send</button>
         </form>
     </div>
-
 
     <script src="./js/index.js"></script>
 </body>
